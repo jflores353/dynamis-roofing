@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <div>
-                <a class="navbar-brand fw-bold" id="nav-name" href="#">DYNAMIS ROOFING</a>
+                <a class="navbar-brand fw-bold" id="nav-name" href="/">DYNAMIS ROOFING</a>
             </div>
             <div class="d-lg-none">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -20,7 +20,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel" style="width: 60%;">
+                    aria-labelledby="offcanvasExampleLabel" style="width: 70%;">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title orange-header" id="offcanvasExampleLabel">DYNAMIS ROOFING</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -28,11 +28,11 @@
                     <div class="offcanvas-body">
                         <div>
                             <ul>
-                                <li class="pb-3"><a class="canvas-link text-dark" href="#about-us">About Us</a></li>
-                                <li class="pb-3"><a class="canvas-link text-dark" href="#our-process">Our Process</a></li>
-                                <li class="pb-3"><a class="canvas-link text-dark" href="#services">Service Types</a></li>
-                                <li class="pb-3"><a class="canvas-link text-dark" href="#service-details">Service Details</a></li>
-                                <li class="pb-3"><a class="canvas-link text-dark" href="#residential">Residential Roofing Systems</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="/#about-us">About Us</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="/#our-process">Our Process</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="/#services">Service Types</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="/#service-details">Service Details</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="#/residential">Residential Roofing Systems</a></li>
                                 <li><a class="canvas-link text-dark" href="#contact">Contact Us</a></li>
                             </ul>
                         </div>
@@ -42,19 +42,19 @@
             <div class="d-none d-lg-flex">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-us">About Us</a>
+                        <a class="nav-link" href="/#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#our-process">Our Process</a>
+                        <a class="nav-link" href="/#our-process">Our Process</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="/#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#residential">Residential Roofs</a>
+                        <a class="nav-link" href="/#residential">Residential Roofs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
+                        <a class="nav-link" href="/#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
     <main>
     <div class="hero hero-img d-flex justify-content-center align-items-center">
         <div>
-            <img id="hero-logo" class="pt-2" src="./assets/uploads/dynamis-logo-transparent.png" alt="">
+            <img class="hero-logo pt-2" src="/assets/uploads/dynamis-logo-transparent.png" alt="">
         </div>
     </div>
 
@@ -335,7 +335,8 @@
     <div>
         <h2 class="text-2xl pb-5">Contact Us</h2>
     </div>
-    <form method="post" action="">
+    <form method="post" action="jflores353@gmail.com" name="dynamis-contact" netlify>
+        <input name="redirect_url" type="hidden" value="/thank-you/">
         <div class="pb-4 row">
             <input type="text" name="name" placeholder="Your Name" class="w-full pb-3 border">
         </div>
