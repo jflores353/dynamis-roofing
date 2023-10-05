@@ -7,60 +7,72 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-  <body class="text-orange-600">
-    <header class="container">
+  <body>
+    <header class="container-fluid sticky-top bg-gray p-0 shadow">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="container">
+            <div>
+                <a class="navbar-brand fw-bold" id="nav-name" href="#">DYNAMIS ROOFING</a>
+            </div>
+            <div class="d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel" style="width: 60%;">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title orange-header" id="offcanvasExampleLabel">DYNAMIS ROOFING</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="#about-us">About Us</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="#our-process">Our Process</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="#services">Service Types</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="#service-details">Service Details</a></li>
+                                <li class="pb-3"><a class="canvas-link text-dark" href="#residential">Residential Roofing Systems</a></li>
+                                <li><a class="canvas-link text-dark" href="#contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link" href="#our-process">Our Process</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#residential">Residential Roofs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
 </header>
+
+
     <main>
-    <div class="hero flex justify-center items-center">
+    <div class="hero hero-img d-flex justify-content-center align-items-center">
         <div>
-            <img src="./assets/uploads/dynamis-logo-transparent.png" alt="">
+            <img id="hero-logo" class="pt-2" src="./assets/uploads/dynamis-logo-transparent.png" alt="">
         </div>
     </div>
 
     <div class="container text-black p-5 mx-auto w-80">
-        <p class="text-orange-500 text-center text-2xl font-bold pb-5">Our Mission:<br> To Leave You With the Strongest Roof 
-            </p>
+        <p class="orange-header text-center display-3 font-bold pb-2 fw-bold">Our Mission:<br> <span class="text-dark">To Leave You With the Strongest Roof 
+        </span></p>
             <p class="pb-5">Dynamis Roofing will provide you with an honest opinion on your roof and deliver a first class 
             experience. From the moment of our first initial inspection to closing
             the job out we want to bring peace and mind when you decide to work with us. We focus on being as
@@ -68,24 +80,26 @@
             and knowledge in the roofing industry to get your job done the right way and on time. We believe in
             building a strong roof but with that we start with building a strong relationship with you first.</p>
     </div>
-    <div class="flex flex-col p-5 justify-center items-center text-black bg-gray-200">
+
+    <div class="container flex flex-col py-3 justify-center items-center text-black bg-gray">
         <div class="w-80 mx-auto p-5">
-            <h2 class="text-xl font-bold pb-3">Our Pledge in Building a Strong Roof:</h2>
+            <h2 class="display-5 fw-bold pb-3">Our Pledge in Building a Strong Roof:</h2>
             <ul class="flex flex-col">
-                <li>Straightforward Opinion</li>
-                <li>Professional Expertise</li>
-                <li>Act in Good Conscience</li>
-                <li>Communication</li>
-                <li>Superior Quality</li>
-                <li>Technology on Your Side</li>
+                <li>- Straightforward Opinion</li>
+                <li>- Professional Expertise</li>
+                <li>- Act in Good Conscience</li>
+                <li>- Communication</li>
+                <li>- Superior Quality</li>
+                <li>- Technology on Your Side</li>
             </ul>
         </div>
     </div>
-    <div class="container text-black">
+
+    <div class="container text-black" id="about-us">
         <img src="/assets/uploads/shingle-roof-nailer-mobile.jpg" class="box-img" alt="">
         <div class="p-5 w-80 text-left mx-auto">
-            <h2 class="text-orange-500 text-center text-2xl font-bold pb-3">About Us</h2>
-            <p class="pb-5">A new Roof is big investment, Our team at Dynamis Roofing consist of the best residential roof
+            <h2 class="text-orange-500 text-center font-bold pb-3">About Us</h2>
+            <p>A new Roof is big investment, Our team at Dynamis Roofing consist of the best residential roof
                 replacement experts in Central Texas Whether you are certain you need to replace your roof or you
                 need someone to help you understand the current conditions of your roof, Dynamis Roofing, will send a
                 trained expert to meet with you and really listen to what you need in order to resolve your problem you
@@ -104,22 +118,22 @@
             like no other here at Dynamis Roofing.
         </p>
     </div>
-    <div class="container p-5 text-black">
-        <h2 class="text-orange-500 text-center text-2xl font-bold">Our Process</h2>
-        <ul class="pt-5 w-80 mx-auto">
+    <div class="container-fluid p-5 text-dark bg-gray" id="our-process">
+        <h2 class="orange-header text-center fw-bold">Our Process</h2>
+        <ul class="pt-5 w-80 mx-auto list-unstyled">
             <li>
-                <h3 class="text-[gray] font-bold underline">Inspection</h3>
+                <h3 class="fw-bold">Inspection</h3>
                 <p>Our Professional Roof Experts will assess the condition of your roof and examine all
                     components. Our Roof Expert will then put together a report that documents the condition of your
                     roof.</p>
             </li>
             <li class="pt-5">
-                <h3 class="text-[gray] font-bold underline">Solution</h3>
+                <h3 class="fw-bold">Solution</h3>
                 <p>Analyzing all option, we will provide you with a cost-effective proposal and recommend the
                     best roofing system based on the site condition of your current property</p>
             </li>
             <li class="pt-5">
-                <h3 class="text-[gray] font-bold underline">Approved</h3>
+                <h3 class="fw-bold">Approved</h3>
                 <p>
                     Once approved we will then be beginning the material procurement process in ordering all
                     necessary material to start the job. We will notify you of the delivery date of when the material
@@ -128,8 +142,8 @@
                 </p>
             </li>
             <li class="pt-5">
-                <h3 class="text-[gray] font-bold underline">Repairs Begin</h3>
-                <ul>
+                <h3 class="fw-bold">Repairs Begin</h3>
+                <ul class="list-unstyled">
                     <li>Remove existing roofing system</li>
                     <li>Inspect the wood deck for any rotten decking and replace as needed.</li>
                     <li>Dry in with roofing material.</li>
@@ -137,15 +151,15 @@
                 </ul>
             </li>
             <li class="pt-5">
-                <h3 class="text-[gray] font-bold underline">Close Job Out</h3>
+                <h3 class="fw-bold">Close Job Out</h3>
                 <p>Submit invoice for final payment and register warranties.</p>
             </li>
         </ul>
     </div>
-    <div class="container p-5 text-black text-center">
-        <h2 class="text-orange-500 text-center text-2xl font-bold">Services</h2>
-        <h3 class="text-[gray] font-bold underline pt-5 pb-3">Residential & Commercial</h3>
-        <ol>
+    <div class="container p-5 text-dark text-center" id="services">
+        <h2 class="orange-header text-center fw-bold">Services</h2>
+        <h3 class="fw-bold pt-5 pb-3">Residential & Commercial</h3>
+        <ol class="list-unstyled">
             <li>Roof Replacement</li>
             <li>Emergency Roofing</li>
             <li>Roof Inspection</li>
@@ -155,18 +169,18 @@
             <li>Roof Repairs</li>
         </ol>
     </div>
-    <div class="container p-5 text-black text-center">
-        <h3 class="text-[gray] font-bold underline pt-5 pb-3">Residential Service</h3>
-        <ol>
+    <div class="container pt-3 text-dark text-center">
+        <h3 class="fw-bold pb-3">Residential Service</h3>
+        <ol class="list-unstyled">
             <li>Asphalt Roofing</li>
             <li>Tile Roofing</li>
             <li>Metal Roofing</li>
             <li>Slate Roofing</li>
         </ol>
     </div>
-    <div class="container p-5 text-black text-center">
-        <h3 class="text-[gray] font-bold underline pt-5 pb-3">Commercial Service</h3>
-        <ol>
+    <div class="container pt-5 pb-3 text-dark text-center">
+        <h3 class="fw-bold pb-3">Commercial Service</h3>
+        <ol class="list-unstyled">
             <li>Flat Roofing</li>
             <li>Roll Roofing</li>
             <li>TPO Roofing</li>
@@ -176,12 +190,13 @@
             <li>Roof Coating</li>
         </ol>
     </div>
-    <img class="pb-5 box-img" src="/assets/uploads/flat-roof-mobile.jpg" alt="">
-    <div class="container p-5 text-black w-80 mx-auto">
-        <h2 class="text-orange-500 text-center text-2xl font-bold">Our Services Explained</h2>
-        <ol>
+    <img class="box-img" src="/assets/uploads/flat-roof-mobile.jpg" alt="">
+    
+    <div class="container bg-gray p-5 text-dark w-80 mx-auto" id="service-details">
+        <h2 class="orange-header pt-3 text-center fw-bold">Our Services Explained</h2>
+        <ol class="list-unstyled">
             <li>
-                <h3 class="text-[gray] font-bold underline pt-5">Roof Replacement</h3>
+                <h3 class="fw-bold pt-5">Roof Replacement</h3>
                 <p>When the time comes, we all need to begin to prepare to have our roof replaced, it’s something us
                     most
                     homeowners don’t think about as much. With Dynamis Roofing we take the pressure off you and deliver
@@ -191,7 +206,7 @@
                     on what to expect from a roof replacement.</p>
             </li>
             <li>
-                <h3 class="text-[gray] font-bold underline pt-5">Emergency Roof Repairs</h3>
+                <h3 class="fw-bold pt-5">Emergency Roof Repairs</h3>
                 <p>
                     This is a vital time; we know your investment property is under critical time and we are here to
                     help.
@@ -203,7 +218,7 @@
                 </p>
             </li>
             <li>
-                <h3 class="text-[gray] font-bold underline pt-5">Roof Inspection</h3>
+                <h3 class="fw-bold pt-5">Roof Inspection</h3>
                 <p>A roof inspection is a thorough examination and assessment of a roof’s condition done by a
                     professional
                     roof inspector. After a roof inspection, the inspector puts together a report that documents the
@@ -212,7 +227,7 @@
                     comes with a photo report and estimate in hand to any necessary repairs or replacement needed.</p>
             </li>
             <li>
-                <h3 class="text-[gray] font-bold underline pt-5">Insurance Claims</h3>
+                <h3 class="fw-bold pt-5">Insurance Claims</h3>
                 <p>Texas is known for hail and high winds; we know the type of damage that can occur to your roof. Our
                     experts here at Dynamis Roofing will help assist you and your insurance claim from start to finish.
                     We
@@ -220,7 +235,7 @@
                     communicated during the process.</p>
             </li>
             <li>
-                <h3 class="text-[gray] font-bold underline pt-5">Roof Tune Up</h3>
+                <h3 class="fw-bold pt-5">Roof Tune Up</h3>
                 <p>A tune up, like your car may need one. We like to call it a tune up to your roof, you may need a tune
                     up
                     to your roof. A Tune up every 6 months to a year can help extend the life of your roof. Our roof
@@ -228,14 +243,14 @@
                     will talk with you on what that tune up includes.</p>
             </li>
             <li>
-                <h3 class="text-[gray] font-bold underline pt-5">Roof Rejuvenation</h3>
+                <h3 class="fw-bold pt-5">Roof Rejuvenation</h3>
                 <p>A roof necessary may only need to be rejuvenated if no repairs or replacement is necessary. We have a
                     roof rejuvenation product that will add an extra 5 years to your roof. This will restore your roof
                     and
                     make it look brand new. Call us to get more information on this program.</p>
             </li>
             <li>
-                <h3 class="text-[gray] font-bold underline pt-5">Roof Repairs</h3>
+                <h3 class="fw-bold pt-5">Roof Repairs</h3>
                 <p>A damaged or aging roof isn’t just an eyesore—it can be a safety hazard as well. Our local Austin
                     roofing
                     contractors specialize in repairing all roofing types. Give us a call and our contractors can
@@ -244,120 +259,117 @@
             </li>
         </ol>
     </div>
-    <div class="container p-5 text-black w-80 mx-auto">
-        <h2 class="text-orange-500 text-center text-2xl font-bold pb-5">Residential Roof System</h2>
-        <ol>
+    <div class="container p-5 text-dark w-80 mx-auto" id="residential">
+        <h2 class="orange-header text-center fw-bold pb-5">Residential Roof System</h2>
+        <ol class="list-unstyled">
             <li>
                 <img src="/assets/uploads/shingle-roof-house-mobile.jpg" class="box-img" alt="">
-                <h3 class="text-[orange] text-lg font-bold pt-5">Asphalt Shingle</h3>
+                <h3 class="fw-bold pt-5">Asphalt Shingle</h3>
                 <p>Asphalt shingle are one of the most common roofing systems in the United States. They are the most
                     budget friendly roofing systems you can get for a full roof replacement. They come in many different
                     types of colors, and they can always be replaced in 10 – 20 years. Shingles being the most popular roof
                     systems out here in Central Texas Austin, you can count on us to replace your shingle roof.</p>
             </li>
-            <p class="text-[gray] font-bold underline pt-5">Pros to a shingle roof:</p>
-            <ul>
-                <li>Most affordable roof system</li>
-                <li>Easy to remove and replace</li>
-                <li>Low maintenance</li>
-                <li>Available in a wide range of colors and styles</li>
+            <p class="text-brown fw-bold pt-5 text-center">Pros to a shingle roof:</p>
+            <ul class="p-0">
+                <li>- Most affordable roof system</li>
+                <li>- Easy to remove and replace</li>
+                <li>- Low maintenance</li>
+                <li>- Available in a wide range of colors and styles</li>
             </ul>
-            <p class="text-[gray] font-bold underline pt-5">Cons to a Shingle Roof:</p>
-            <ul class="pb-5">
-                <li>Less resistance to algae</li>
-                <li>Replacing every 10-15 year</li>
-                <li>Less likely to hold up to hail or high winds</li>
+            <p class="text-brown fw-bold pt-5 text-center">Cons to a Shingle Roof:</p>
+            <ul class="p-0">
+                <li>- Less resistance to algae</li>
+                <li>- Replacing every 10-15 year</li>
+                <li>- Less likely to hold up to hail or high winds</li>
             </ul>
             <li class="pt-5">
                 <img src="/assets/uploads/tile-roof-mobile.jpg" class="box-img" alt="">
-                <h3 class="text-[orange] text-lg font-bold pt-5">Tile Roof</h3>
+                <h3 class="fw-bold pt-5">Tile Roof</h3>
                 <p>One of the most beautiful roof systems there is to install, this roof system will last you 100 years when
                     properly maintenance. They are known for being durable and heavy but that is expected when they will
                     last you 100 years. They are an expenses system to install but it’s the beats having to replace your roof
                     every 10- 15 years. They can withstand hail and wind a lot stronger than your asphalt shingle system.</p>
             </li>
-            <p class="text-[gray] font-bold underline pt-5">Pros of Tile Roof:</p>
-            <ul>
-                <li>Long lasting</li>
-                <li>Energy efficient</li>
-                <li>Low maintenance</li>
-                <li>Good for resale value</li>
+            <p class="text-brown fw-bold pt-5 text-center">Pros of Tile Roof:</p>
+            <ul class="p-0">
+                <li>- Long lasting</li>
+                <li>- Energy efficient</li>
+                <li>- Low maintenance</li>
+                <li>- Good for resale value</li>
             </ul>
-            <p class="text-[gray] font-bold underline pt-5">Cons of Tile Roof:</p>
-            <ul class="pb-5">
-                <li>Weighs more than your normal roof system</li>
-                <li>Suffers damage from fallen trees or other impacts</li>
-                <li>Requires exper installation, maintenance, and repairs</li>
+            <p class="text-brown fw-bold pt-5 text-center">Cons of Tile Roof:</p>
+            <ul class="p-0">
+                <li>- Weighs more than your normal roof system</li>
+                <li>- Suffers damage from fallen trees or other impacts</li>
+                <li>- Requires exper installation, maintenance, and repairs</li>
             </ul>
             <li class="pt-5">
                 <img src="/assets/uploads/metal-roof-mobile.jpg" class="box-img" alt="">
-                <h3 class="text-[orange] text-lg font-bold pt-5">Metal</h3>
+                <h3 class="fw-bold pt-5">Metal</h3>
                 <p>Metal roofs are becoming popular with the new Morden design in the real estate market. More
                     people are looking to have that black and white look on their house. With this increase in popularity
                     comes an abundant amount of options. A metal roof can add style and flair to your Central Texas
                     Home. Austin Texas is seeing more metal roofs being put up because of the longevity it comes with
                     expecting to last you 40- 70 years.</p>
             </li>
-            <p class="text-[gray] font-bold underline pt-5">Pros of Metal Roof:</p>
-            <ul>
-                <li>Resistance to corrosion and cracking</li>
-                <li>Extremely long lifespan</li>
-                <li>Wind resistant roofing material</li>
-                <li>Streamlined aesthetic</li>
+            <p class="text-brown fw-bold pt-5 text-center">Pros of Metal Roof:</p>
+            <ul class="p-0">
+                <li>- Resistance to corrosion and cracking</li>
+                <li>- Extremely long lifespan</li>
+                <li>- Wind resistant roofing material</li>
+                <li>- Streamlined aesthetic</li>
             </ul>
-            <p class="text-[gray] font-bold underline pt-5">Cons of Metal Roof:</p>
-            <ul>
-                <li>High upfront costs compared to other roofing materials</li>
-                <li>Noise during rain or hailstorms</li>
-                <li>Risk of denting, fading, staining, or rusting</li>
-                <li>Difficulty of modification and repairs</li>
-                <li>Slippery and hot surface</li>
+            <p class="text-brown fw-bold pt-5 text-center">Cons of Metal Roof:</p>
+            <ul class="p-0">
+                <li>- High upfront costs compared to other roofing materials</li>
+                <li>- Noise during rain or hailstorms</li>
+                <li>- Risk of denting, fading, staining, or rusting</li>
+                <li>- Difficulty of modification and repairs</li>
+                <li>- Slippery and hot surface</li>
             </ul>
         </ol>
     </div>
     <div class="w-100 mx-auto bg-lightorange">
-        <div class="container p-5">
+        <div class="container p-5" id="contact">
     <div>
         <h2 class="text-2xl pb-5">Contact Us</h2>
     </div>
-    <form method="post" action="https://">
-        <label for="name">
-            <span>Your Name</span>
-            <input type="text" name="name" class="w-full border">
-        </label>
-        <label for="email">
-            <span>Your Email Address</span>
-            <input type="email" name="email" class="w-full border">
-        </label>
-        <fieldset class="border">
-            <legend>Job Type</legend>
-            <div class="flex justify-around py-4">
-                <div>
-                    <input type="radio" name="residential">
-                    <label for="residential">Residential</label>
-                </div>
-                <div>
-                    <input type="radio" name="commercial">
-                    <label for="residential">Commercial</label>
-                </div>
+    <form method="post" action="">
+        <div class="pb-4 row">
+            <input type="text" name="name" placeholder="Your Name" class="w-full pb-3 border">
+        </div>
+        <div class="pb-4 row">
+            <input type="email" name="email" placeholder="Your Email Address" class="w-full pb-3 border">
+        </div>
+        <div class="pb-4 row">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Residential</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Commercial</label>
+              </div>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="pb-4 row">
+                <textarea name="message" class="w-full border"
+                    placeholder="Tell us about your roofing project"></textarea>
             </div>
-        </fieldset>
-        <label for="message">Message</label>
-        <textarea name="message" class="w-full h-48 border"></textarea>
-        <button
-          class="hover:shadow-form rounded-md bg-orange-500 py-3 px-8 text-center text-base font-semibold text-white outline-none"
-        >
-          Submit
-        </button>
+            <button id="submit" class="p-1 text-center text-white btn">
+                SUBMIT
+            </button>
+        </div>
     </form>
 </div>
     </div>
 </main>
-    <footer class="h-52 w-100 pt-5 bg-[gray]">
-    <img class="m-auto" src="./assets/uploads/footer-logo-cropped.png" alt="">
-    <div class="flex flex-col justify-center items-center text-white">
-        <h3>(737) 235-9642</h3>
-        <h3>Email: info@dynamisroofs.com</h3>
+    <footer class="container-fluid bg-gray pt-4 text-dark">
+    <div class="d-flex flex-column justify-content-center align-items-center text-dark bg-gray text-center">
+        <img id="footer-logo" src="./assets/uploads/footer-logo-cropped.png" alt="">
+        <h3 class="py-2"><a class="text-decoration-none text-dark" href="tel:+17372359642">(737) 235-9642</a></h3>
+        <h3 class="py-2"><a class="text-decoration-none text-dark" href = "mailto:info@dynamisroofs.com">info@dynamisroofs.com</a></h3>
         <h3>Business Hours: Monday - Friday 8 AM - 5 PM CST</h3>
         <h3>1700 University Blvd., Round Rock, TX 78665</h3>
         <h3>&copy; Dynamis Roofing 2024</h3>

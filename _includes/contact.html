@@ -1,35 +1,32 @@
-<div class="container p-5">
+<div class="container p-5" id="contact">
     <div>
         <h2 class="text-2xl pb-5">Contact Us</h2>
     </div>
-    <form method="post" action="https://">
-        <label for="name">
-            <span>Your Name</span>
-            <input type="text" name="name" class="w-full border">
-        </label>
-        <label for="email">
-            <span>Your Email Address</span>
-            <input type="email" name="email" class="w-full border">
-        </label>
-        <fieldset class="border">
-            <legend>Job Type</legend>
-            <div class="flex justify-around py-4">
-                <div>
-                    <input type="radio" name="residential">
-                    <label for="residential">Residential</label>
-                </div>
-                <div>
-                    <input type="radio" name="commercial">
-                    <label for="residential">Commercial</label>
-                </div>
+    <form method="post" action="">
+        <div class="pb-4 row">
+            <input type="text" name="name" placeholder="Your Name" class="w-full pb-3 border">
+        </div>
+        <div class="pb-4 row">
+            <input type="email" name="email" placeholder="Your Email Address" class="w-full pb-3 border">
+        </div>
+        <div class="pb-4 row">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Residential</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Commercial</label>
+              </div>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="pb-4 row">
+                <textarea name="message" class="w-full border"
+                    placeholder="Tell us about your roofing project"></textarea>
             </div>
-        </fieldset>
-        <label for="message">Message</label>
-        <textarea name="message" class="w-full h-48 border"></textarea>
-        <button
-          class="hover:shadow-form rounded-md bg-orange-500 py-3 px-8 text-center text-base font-semibold text-white outline-none"
-        >
-          Submit
-        </button>
+            <button id="submit" class="p-1 text-center text-white btn">
+                SUBMIT
+            </button>
+        </div>
     </form>
 </div>

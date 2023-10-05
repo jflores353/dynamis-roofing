@@ -2,7 +2,7 @@
 ---
  /* custom variables */
 :root {
-  --orange: ##FE7301;
+  --orange: #FE7301;
   --black: #000;
   --white: #fff;
   --gray: #E9EFFD;
@@ -57,22 +57,67 @@ body{
 .bg-lightorange {
     background-color: var(--lightorange);
 }
+
+.hero-img {
+   background-image : url('../uploads/banner.jpg');
+}
+
 .hero {
-    background-image: url('../uploads/banner.jpg');
     height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#nav-group {
-    padding-right: 1.5rem;
+#hero-logo {
+    filter: brightness(1.75);
 }
 
+#footer-logo {
+    filter: brightness(1.0);
+}
+
+#nav-name {
+    color: var(--orange);
+    font-size: var(--headingFont);
+}
+
+.orange-header {
+    color: var(--orange)
+}
+
+.bg-gray {
+    background-color: var(--lightgray);
+}
+
+.text-brown {
+    color: var(--brown);
+    font-size: var(--h5);
+}
 
 li>h3{
     padding-bottom:1rem;
 }
 
+ul{
+    list-style: none;
+}
+
+ul>li>a{
+    text-decoration: none;
+}
+
 .box-img {
     width: -webkit-fill-available;
+}
+
+textarea {
+    height: 20vh;
+}
+
+#submit {
+    background: var(--brown);
+}
+
+#submit:hover {
+    background: var(--orange);
 }
