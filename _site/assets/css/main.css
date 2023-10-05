@@ -1,0 +1,76 @@
+ /* custom variables */
+:root {
+  --orange: ##FE7301;
+  --black: #000;
+  --white: #fff;
+  --gray: #E9EFFD;
+  --lightgray: #F7F7F7;
+  --brown: #b25e01;
+  --lightorange: #ffc380;
+
+  --background: var(--gray);
+  --textColor: var(--black);
+  --buttonTextColor: var(--black);
+  --lineColor: var(--blue);
+  --cardBg: var(--white);
+  --headerBackground: var(--white);
+  --footerBackground: var(--gray);
+
+  --line: solid 5px var(--blue);
+
+  /* Type */
+  --headingFont: "Arial";
+  --bodyFont: "Arial";
+  --baseFontSize: 100%;
+  --h1: 3.052em;
+  --h2: 2.441em;
+  --h3: 1.953em;
+  --h4: 1.563em;
+  --h5: 1.25em;
+  --smallText: 0.8em;
+  --extraSmallText: 0.5em;
+
+  /* Elevation */
+  --level_1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+      /* Positioning */
+  --containerPadding: 2.5%;
+  --headerHeight: 7rem;
+  --borderRadius: 25px;
+  --navButtonPadding: 1% 4% 1% 4%;
+  --linkButtonPadding: 1% 4% 2.5% 4%;
+}
+
+body{
+    box-sizing: border-box;
+    color: black;
+}
+
+.bg-lightorange {
+    background-color: var(--lightorange);
+}
+.hero {
+    background-image: url('../uploads/banner.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#nav-group {
+    padding-right: 1.5rem;
+}
+
+
+li>h3{
+    padding-bottom:1rem;
+}
+
+.box-img {
+    width: -webkit-fill-available;
+}

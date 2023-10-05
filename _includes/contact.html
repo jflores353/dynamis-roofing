@@ -1,0 +1,35 @@
+<div class="container p-5">
+    <div>
+        <h2 class="text-2xl pb-5">Contact Us</h2>
+    </div>
+    <form method="post" action="https://">
+        <label for="name">
+            <span>Your Name</span>
+            <input type="text" name="name" class="w-full border">
+        </label>
+        <label for="email">
+            <span>Your Email Address</span>
+            <input type="email" name="email" class="w-full border">
+        </label>
+        <fieldset class="border">
+            <legend>Job Type</legend>
+            <div class="flex justify-around py-4">
+                <div>
+                    <input type="radio" name="residential">
+                    <label for="residential">Residential</label>
+                </div>
+                <div>
+                    <input type="radio" name="commercial">
+                    <label for="residential">Commercial</label>
+                </div>
+            </div>
+        </fieldset>
+        <label for="message">Message</label>
+        <textarea name="message" class="w-full h-48 border"></textarea>
+        <button
+          class="hover:shadow-form rounded-md bg-orange-500 py-3 px-8 text-center text-base font-semibold text-white outline-none"
+        >
+          Submit
+        </button>
+    </form>
+</div>
