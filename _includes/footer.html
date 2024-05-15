@@ -1,10 +1,21 @@
 <footer class="container-fluid bg-gray pt-4 text-dark">
+    <div class="mb-5" id="map"></div>
     <div class="d-flex flex-column justify-content-center align-items-center text-dark bg-gray text-center">
         <img id="footer-logo" src="./assets/uploads/footer-logo-cropped.png" alt="">
         <h3 class="py-2"><a class="text-decoration-none text-dark" href="tel:+17372359642">(737) 235-9642</a></h3>
-        <h3 class="py-2"><a class="text-decoration-none text-dark" href = "mailto:info@dynamisroofs.com">info@dynamisroofs.com</a></h3>
+        <h3 class="py-2"><a class="text-decoration-none text-dark"
+                href="mailto:info@dynamisroofs.com">info@dynamisroofs.com</a></h3>
         <h3>Business Hours: Monday - Friday 8 AM - 5 PM CST</h3>
         <h3>1700 University Blvd., Round Rock, TX 78665</h3>
         <h3>&copy; Dynamis Roofing 2024</h3>
     </div>
 </footer>
+
+<script>
+    var map = L.map('map').setView([30.5729116, -97.6552344], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var marker = L.marker([30.5729116, -97.6552344]).addTo(map);
+</script>

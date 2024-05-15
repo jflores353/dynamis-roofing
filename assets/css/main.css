@@ -122,3 +122,15 @@ textarea {
 #submit:hover {
     background: var(--orange);
 }
+
+#map { 
+    height: 350px;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    #map {
+        width: 60%;
+        margin: auto;
+    }
+}
